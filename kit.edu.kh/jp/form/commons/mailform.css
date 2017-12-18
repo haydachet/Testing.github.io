@@ -1,0 +1,122 @@
+/*--------------------------------------------------------
+	mailform style
+--------------------------------------------------------*/
+div#formTitle {
+	border: solid 1px #CCCCCC;
+	background-color: #EEEEEE;
+	width: 520px;
+	text-align: lert;
+	margin: 0px auto 2px auto;
+}
+div#formTitle h1 {
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+	border: solid 1px #FFFFFF;
+	background-color: #F1F5FA;
+	font-size: 18px;
+	padding: 5px;
+	color: #007CC2;
+}
+form#mailform {
+	margin: 0px;
+	padding: 0px;
+}
+table.infield {
+	width: 520px;
+	background-color: #CCCCCC;
+	margin: 0px auto 0px auto;
+}
+table.infield tr {
+	border-bottom: solid 1px #CCCCCC;
+}
+table.infield tr th {
+	border: solid 1px #FFFFFF;
+	background-color: #F1F5FA;
+	padding: 2px;
+	text-align: left;
+}
+table.infield tr th p{
+	color: #252525;
+	line-height: normal;
+	margin: 0px;
+	padding: 0px;
+	font-size: 12px;
+}
+table.infield tr th img{
+	float: right;
+}
+table.infield tr th span{
+	font-family: "Myriad Pro","Verdana","Arial", "Helvetica", "sans-serif";
+	color: #007CC2;
+	font-weight: normal;
+	line-height: normal;
+	margin: 0px;
+	padding: 0px;
+	font-size: 10px;
+}
+table.infield tr td {
+	border: solid 1px #FFFFFF;
+	background-color: #EFEFEF;
+	padding: 2px;
+	text-align: left;
+	font-size: 12px;
+	line-height: 2em;
+}
+table.infield tr td  span {
+	font-size: 10px;
+	color: #999999;
+}
+table.infield tr td input,textarea {
+	vertical-align: middle;
+	border-top : 1px solid gray ;
+	border-bottom : 1px solid gray ;
+	border-left : 1px solid gray ;
+	border-right : 1px solid gray ;
+	background-color : #FFFFFF;
+	padding: 2px;
+	color : #232323;
+}
+div#confirmWindow {
+	filter: alpha(opacity=95);
+	-moz-opacity: 0.95;
+	-khtml-opacity: 0.95;
+	opacity: 0.95;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	overflow: hidden;
+	z-index: 1;
+	position: fixed!important;
+	position/**/:  absolute;
+	top: 0;
+	left: 0;
+	visibility: hidden;
+	background-color: #000000;
+	font-size: 12px;
+	text-align: center;
+	_top: expression(
+		document.documentElement && document.documentElement.scrollTop  || 
+		document.body && body.scrollTop  || 0
+		+ 0 + 'px'
+	);
+}
+div#confirmBody {
+	width: 1px;
+	overflow: auto;
+	visibility: hidden;
+	position: absolute;
+	z-index: 10;
+	padding: 20px;
+	text-align: center;
+	margin: 0px auto 0px auto;
+}
+div#confirmBody h2 {
+	color: #FFFFFF;
+	margin: 0px auto 0px auto;
+	padding: 10px;
+}
+div.buttons {
+	padding: 10px;
+	margin: 0px auto 0px auto;
+}

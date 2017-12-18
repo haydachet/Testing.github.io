@@ -1,0 +1,567 @@
+@charset "UTF-8";
+
+/*問い合わせフォーム*/
+/*フォーム全体のサイズ*/
+#mailform { width: 80%; margin: 0 auto;}
+
+/*入力欄の幅*/
+#mailform .wideL { width: 100%;}
+#mailform .wideM { width: 80%;}
+#mailform .wideS { width: 60%;}
+#mailform .wideSS { width: 40%;}
+
+
+div#mfp_hidden {
+	overflow: hidden;
+	width: 1px;
+	height: 1px;
+	padding: 0px;
+	margin: 0px;
+}
+div#mfp_hidden input {
+	margin: 10px;
+}
+div.mfp_thanks {
+	padding: 30px;
+}
+div.mfp_thanks p {
+	line-height: 1.7em;
+}
+div.mfp_thanks ul.mfp_caution {
+	margin: 0px;
+	padding: 0px;
+}
+div.mfp_thanks ul.mfp_caution li {
+	display: block;
+	color: #C00;
+	margin: 0px;
+	padding: 5px 0px;
+}
+div#mfp_thanks {
+	text-align: center;
+	font-size: 18px;
+	padding: 20px 0px;
+}
+div#mfp_thanks strong {
+	color: #C00;
+	font-size: 24px;
+}
+
+#mailform form dl dt {
+	float: left;
+	width: 200px;
+	line-height: 1.6rem;
+	clear: both;
+	padding: 15px 0px;
+	text-align: left;
+	margin: 0px;
+	font-weight: 700;
+	position:relative;
+}
+#mailform form dl dd {
+	margin: 0px;
+	padding: 8px 5px 10px 220px;
+	line-height: 1.5em;
+	text-align: left;
+	border-bottom: 1px solid #CCC;
+}
+
+form#mailformpro dl dd ul,form#mailformpro dl dd ol {
+}
+form#mailformpro dl dd ul li,form#mailformpro dl dd ol li {
+}
+
+/*入力欄*/
+#mailform input[type=text],
+#mailform input[type=number],
+#mailform input[type=date],
+#mailform input[type=email],
+#mailform input[type=tel],
+#mailform select {
+	height: 2.2em;
+	font-size: 1.2rem;
+	padding: 5px 8px;
+	margin: 3px 0;
+	vertical-align: middle;
+	display: inline-block;
+	border: 1px solid #999;
+}
+
+
+#mailform label {
+	font-size: 1em;
+	padding: 5px 8px;
+	margin: 3px 0;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+#mailform textarea {
+	padding: 3px 8px;
+}
+
+input[type=text]:focus,
+input[type=number]:focus,
+input[type=date]:focus,
+input[type=email]:focus,
+input[type=tel]:focus,
+select:focus,
+textarea:focus {
+	background-color: #FFF;
+	-webkit-box-shadow: 0 0 0px 1000px #FFF inset;
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+	background-color: #FFF;
+	-webkit-box-shadow: 0 0 0px 1000px #FFF inset;
+}
+
+
+
+/*行の色*/
+#mailform .mfp_colored {
+	background-color: #FFF;
+}
+#mailform .mfp_achroma {
+	background-color: #FFF;
+}
+
+/*確認画面*/
+table#mfp_confirm_table {
+	border: none;
+	width: 100%;
+}
+table#mfp_confirm_table tr.mfp_colored {
+	background-color: #FFF;
+}
+table#mfp_confirm_table tr.mfp_achroma {
+	background-color: #FFF;
+}
+table#mfp_confirm_table tr th,table#mfp_confirm_table tr td {
+	text-align: left;
+	border: none;
+	padding: 5px 10px;
+}
+table#mfp_confirm_table tr th {
+	white-space: nowrap;
+	width: 200px;
+}
+table#mfp_confirm_table tr td {
+	line-height: 1.5em;
+	word-break: break-all;
+}
+
+div#mfp_phase_confirm {
+	clear: both;
+}
+/*確認画面のタイトル*/
+div#mfp_phase_confirm h4 {
+	font-size: 1.5rem;
+	padding: 10px 0px 0px 0px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+div#mfp_overlay {
+	position: absolute;
+	display: none;
+	z-index: 10001;
+}
+div#mfp_overlay_inner {
+	background-color: #FFF;
+	padding: 15px;
+	margin: 0px auto;
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px #000;
+	width: 640px;
+	max-width: 90%;
+}
+div#mfp_overlay_background {
+	background-color: #000;
+	position: absolute;
+	display: none;
+	z-index: 10000;
+}
+div#mfp_loading_screen {
+	z-index: 20000;
+	opacity: 0.8;
+	display: none;
+	background-color: #000;
+	position: absolute;
+}
+div#mfp_loading {
+	z-index: 20001;
+	position: absolute;
+	display: none;
+	width: 40px;
+	height: 40px;
+	background-image: url(images/mfp_loading.gif);
+}
+div.mfp_err {
+	clear: both;
+	display: none;
+	text-align: left;
+	margin: 0;
+	padding: 0;
+	color: #F00;
+	font-size: 12px;
+	line-height: normal;
+	background-repeat: no-repeat;
+	background-position: 0px 1px;
+	position: absolute; bottom: .8em; left: 16rem; margin: auto;
+}
+
+.mfp_parent_error {
+	border: solid 2px #F00;
+}
+.problem {
+	background-color: #FCC;
+}
+div#mfp_error {
+	background-color: #FEE;
+	border: solid 1px #F00;
+	padding: 10px;
+	display: none;
+}
+div#mfp_error p {
+	padding: 0px;
+	margin: 0px;
+	font-size: 14px;
+	text-align: center;
+}
+div#mfp_error p strong {
+	font-size: 18px;
+	color: #F00;
+}
+div#mfp_warning {
+	background-color: #FEE;
+	border: solid 1px #F00;
+	padding: 10px;
+	display: none;
+}
+div#mfp_warning p {
+	padding: 0px;
+	margin: 0px;
+	font-size: 14px;
+	text-align: center;
+}
+div#mfp_warning p strong {
+	font-size: 18px;
+	color: #F00;
+}
+div#mfp_price {
+	color: #C00;
+	font-size: 36px;
+	padding: 10px;
+	font-weight: bolder;
+}
+div#mfp_price span {
+	color: #666;
+	font-size: 12px;
+	font-weight: normal;
+}
+button.mfp_next,button.mfp_prev {
+	font-size: 18px;
+	margin: 10px;
+	padding: 5px 10px;
+}
+button.mfp_next {
+	float: right;
+}
+button.mfp_prev {
+	float: left;
+}
+ul#mfp_phase_stat {
+	padding: 10px;
+}
+ul#mfp_phase_stat li {
+	float: left;
+	padding: 8px 15px;
+	border-radius: 3px;
+	margin: 5px;
+	list-style: none;
+	font-size: 14px;
+}
+ul#mfp_phase_stat li.mfp_phase_arrow {
+	bos-shadow: none;
+	padding: 8px 5px;
+}
+ul#mfp_phase_stat li.mfp_active_phase {
+	background-color: #E8EEF9;
+	box-shadow: 0px 0px 5px #000;
+}
+ul#mfp_phase_stat li.mfp_inactive_phase {
+	background-color: #CCC;
+	color: #666;
+	box-shadow: 0px 0px 5px #CCC;
+}
+div#mfp_shopping_cart {
+	border: solid 1px #CCC;
+	margin: 0px;
+	padding: 0px;
+}
+div#mfp_shopping_cart p {
+	margin: 0px;
+	text-align: center;
+	padding: 20px 10px;
+	font-size: 12px;
+	background-color: #FEE;
+}
+table.mfp_shoppingcart {
+	border-spacing: 0px;
+	border-collapse: collapse;
+	width: 100%;
+}
+table.mfp_shoppingcart thead tr td {
+	background-color: #EEE;
+	border-bottom: solid 1px #CCC;
+	text-align: center;
+	font-size: 12px;
+	padding: 5px;
+}
+table.mfp_shoppingcart tbody tr th,table.mfp_shoppingcart tbody tr td {
+	font-size: 12px;
+	padding: 5px;
+	border-bottom: solid 1px #CCC;
+}
+table.mfp_shoppingcart tbody tr td select {
+	display: block;
+	margin: 0px auto;
+	text-align: center;
+}
+table.mfp_shoppingcart tbody tr td select option {
+	text-align: center;
+}
+table.mfp_shoppingcart tbody tr th span {
+	display: block;
+	font-weight: normal;
+	font-size: 10px;
+	color: #666;
+	padding: 3px 0px;
+}
+table.mfp_shoppingcart tfoot tr td {
+	padding: 5px;
+	font-size: 16px;
+	font-weight: bolder;
+	color: #900;
+}
+td.msc_price {
+	font-size: 12px;
+	text-align: right;
+}
+
+/*送信ボタン、キャンセルボタン*/
+div.mfp_buttons {
+	clear: both;
+	margin: 30px 0px;
+	text-align: center;
+}
+.mfp_element_submit,.mfp_element_reset,.mfp_element_button {
+	width: 250px;
+	color: #FFF;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	outline: none;
+	font-family: inherit; 
+}
+
+
+.imagebutton {
+	margin: 0px;
+	padding: 0px;
+	border: none;
+	outline: none;
+	background: none;
+}
+.mfp_element_all {
+	max-width: 100%;
+}
+
+.mfp_element_reset {
+	color: #333;
+}
+.mfp_element_submit:hover,.mfp_element_reset:hover,.mfp_element_button:hover {
+	opacity: .6;
+}
+input#mfp_reserve_item,input#mfp_reserve_date {
+	display: none;
+}
+div#mfp_reserve_wrapper {
+	position: relative;
+	overflow: hidden;
+	border: solid 1px #CCC;
+}
+div#mfp_reserve_inner {
+	position: relative;
+	padding: 0px 0px 0px 100px;
+	overflow: auto;
+}
+div#mfp_reserve_wrapper table {
+	border-spacing: 0px;
+	border-collapse: collapse;
+}
+div#mfp_reserve_wrapper table.mfp_reserve_table_label {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100px;
+	background-color: #FEE;
+	z-index: 100;
+}
+div#mfp_reserve_wrapper table.mfp_reserve_table_value {
+	padding: 0px 0px 0px 0px;
+}
+div#mfp_reserve_wrapper table.mfp_reserve_table_value tr td.mfp_reserve_active,
+div#mfp_reserve_wrapper table.mfp_reserve_table_value tr td.mfp_reserve_warning {
+	cursor: pointer;
+}
+div#mfp_reserve_wrapper table.mfp_reserve_table_value tr td.mfp_reserve_active:hover,
+div#mfp_reserve_wrapper table.mfp_reserve_table_value tr td.mfp_reserve_warning:hover {
+	background-color: #E8EEF9;
+}
+div#mfp_reserve_wrapper table.mfp_reserve_table_value tr td.mfp_reserve_current {
+	background-color: #0068B7;
+	color: #FFF;
+}
+td.mfp_reserve_disabled {
+	background-color: #CCC;
+}
+td.mfp_reserve_warning {
+	background-color: #FFC;
+}
+div#mfp_reserve_wrapper table tr td,div#mfp_reserve_wrapper table tr th {
+	border: solid 1px #CCC;
+	padding: 0px 5px;
+	font-size: 12px;
+	text-align: center;
+	font-weight: normal;
+	height: 20px;
+	text-align: left;
+}
+td.mfp_reserve_week_0 {
+	color: #F00;
+	background-color: #FEE;
+}
+td.mfp_reserve_week_6 {
+	color: #00F;
+	background-color: #EEF;
+}
+div.mfp_ok {
+	border-radius: 5px;
+	background-color: #090;
+	border: solid 1px #090;
+	display: inline-block;
+	line-height: 1.5em;
+	padding: 0px 5px;
+	margin: 0px 2px;
+	color: #FFF;
+	font-size: 10px;
+	background-size: 100% 100%;
+	display: none;
+}
+div.prefcodeWrapper {
+	position: relative;
+}
+div.prefcodeResult {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	padding: 5px;
+	border: solid 1px #CCC;
+	background-color: #FFF;
+	box-shadow: 0px 0px 5px #CCC;
+	display: none;
+	z-index: 99;
+}
+div.prefcodeResult div {
+	cursor: pointer;
+}
+div.prefcodeResult div:hover {
+	background-color: #C9EBFB;
+}
+div.prefcodeResult div.prefcodeNext {
+	background-color: #EEE;
+	text-align: center;
+}
+div.prefLoading {
+	padding: 60px 100px;
+	background: url(images/mfp_zip_loading.gif) no-repeat center center;
+}
+.hidefield {
+	height: 0px;
+	overflow: hidden;
+}
+.showfield {
+	height: auto;
+	overflow: visible;
+}
+
+#mailform .horizontal_list li {
+	display: inline-block;	
+}
+
+/*「必須」ラベル*/
+#mailform .must:after {
+	content:'\5fc5\9808';
+	font-size: 0.8em;
+	line-height: 120%;
+	color: #FFF;
+	padding: 4px 8px;
+	background: #F00;
+	text-align: center;
+	position:absolute;
+	right: 0;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+}
+
+#mailform span.notice {
+	font-size: .8em;
+	display: block;
+}
+
+#mailform .address span {
+	font-size: .8em;
+	margin-right: .5em;
+}
+
+
+/*縦ならびフォーム*/
+@media screen and (max-width: 640px) {
+	#mailform form dl dt {
+		width: 100%;
+		padding-bottom: 0;
+	}
+	#mailform form dl dd {
+		width: 100%;
+		padding: 8px 0 10px;
+		border-bottom: none;
+	}
+	
+	#mailform .must:after {
+		position:relaltive;
+		right: auto;
+		margin-left: 1em;
+	}
+	#mailform .wideL { width: 100%;}
+	#mailform .wideM { width: 100%;}
+	#mailform .wideS { width: 100%;}
+	
+	.mfp_element_submit,
+	.mfp_element_reset,
+	.mfp_element_button, 
+	#mfp_button_cancel {
+		width: 100%;
+	}
+
+	div#mfp_phase_confirm  table#mfp_confirm_table tr th {
+		width: 30%;
+		padding: 0;
+	}
+	
+	div.mfp_err { left: 0; }
+}

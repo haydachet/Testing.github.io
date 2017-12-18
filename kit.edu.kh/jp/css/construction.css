@@ -1,0 +1,109 @@
+@charset "utf-8";
+/* .wrapper { width: 100%; min-height: 100vh; padding: 90px 0 250px; position: relative; } */
+.wrapper { width: 100%; min-height: 100vh; padding: 0px 0 250px; position: relative; }
+.contents_wrap { width: 1000px; max-width: 95%; margin: 0 auto; }
+.contents_wrap_s { width: 650px; max-width: 70%; margin: 0 auto; }
+.contsHalf { width: 50%; }
+.contsL { float: left; }
+.contsR { float: right; }
+.box-section {}
+.anchor { padding-top: 30px; margin-top: -30px; }
+.section-division { margin-bottom: 30px; }
+
+@media screen and (max-width: 750px) {
+	.wrapper { padding-bottom: 4rem; }
+	.contents_wrap_s { max-width: 95%; }
+	.box-section { padding: 20px 0; }
+}
+
+.pc_only { display: inline-block; }
+.sp_only { display: none; }
+@media screen and (max-width: 750px) {
+	.pc_only { display: none; }
+	.sp_only { display: inline-block; }
+}
+
+.underline { text-decoration: underline;}
+/*column layout*/
+.column2 > * ,
+.column-max2 > * { width: 48%; display: inline-block; vertical-align: top; }
+.column2 > *:nth-child(even) ,
+.column-max2 > *:nth-child(even) { margin-left: 4%; }
+
+.column-max3 > * { width: 32%; display: inline-block; margin-right: 2%; vertical-align: top; }
+.column-max3 > *:nth-child(3n) { margin-right: 0; }
+
+
+@media screen and (max-width: 750px) {
+	.column-max2 > * { width: 100%; display: block; margin: 0 0 3% 0;}
+	.column-max2 > *:nth-child(even) { margin-left: 0; margin-top: 1.2rem; }
+	.column-max2.thin > *:nth-child(even) { margin-top: 1rem; }
+	.column-max3 > * { width: 100%; display: block; margin: 0 0 2rem 0;}
+}
+
+/*-- 共通スタイル --*/
+img { max-width: 100%; }
+.logo { background: url(../img/logo.gif) no-repeat; background-size: auto 100%; background-position: left center; text-indent: 100%; white-space: nowrap; overflow: hidden; margin-bottom: 0; }
+
+
+
+
+/*-- ヘッダー--*/
+header { width: 100%; z-index: 2; position: fixed; top: 0; left: 0; right: 0;padding: 10px 0; margin: auto; background: #FFF; z-index: 100;  }
+header > .contents_wrap { position: relative; }
+header.open { z-index: 1001; }
+header .logo { width: 352px; height: 70px; display: block; -ms-transition: all .3s; -webkit-transition: all .3s; transition: all .3s; cursor: pointer; }
+
+.gNavi { width: 25rem; display: none; position: absolute; top: 100%; right: 0; padding: 0; background: #FFF; z-index: 999; }
+.gNavi .mainmenu > li + li { border-top: 1px solid #ECECEC; }
+.gNavi .mainmenu > li { padding: 0; text-align: left; font-size: 1rem; position: relative; }
+.gNavi .mainmenu > li a { padding: 1rem 2rem; display: block; }
+.gNavi .mainmenu > li a:after { content:''; width: .8rem; height: .8rem; display: block; border-right: 3px solid #ECECEC; border-bottom: 3px solid #ECECEC; -ms-transform: translateY(-50%) rotate(45deg); -webkit-transform: translateY(-50%) rotate(45deg); transform: translateY(-50%) rotate(45deg); position: absolute; top: 0; bottom: 0; right: 1rem; margin: auto;  } 
+.gNavi .sub { font-size: .7rem; display: inline-block; line-height: 120%; margin-left: 1em; }
+.gNavi a { width: 100%; display: block; -ms-transition: all .3s; -webkit-transition: all .3s; transition: all .3s; }
+.gNavi a:hover { opacity: .7; }
+
+.btn_gnavi { position: absolute; top: 1em; right: 0; margin: auto; text-indent: 100%; white-space: nowrap; overflow: hidden; outline: none; z-index: 1000; display: block;}
+.gNavi.open { display: block; }
+	
+.btn_humberger { font-size: .6rem; width: 4em; height: 4em; padding: 0; border: none; background: none; }
+.btn_humberger:before,
+.btn_humberger:after { content: ''; width: 3em; height: 2px; display: block; position: absolute; top: 0; bottom: 0;  left: 0; right: 0; margin: auto; background: #777; -ms-transform-origin: center center; -webkit-transform-origin: center center; transform-origin: center center; -ms-transition: all .3s; -webkit-transition: all .3s; transition: all .3s;  }
+.btn_humberger:before { -ms-transform: translateY(-.8em); -webkit-transform: translateY(-.8em); transform: translateY(-.8em); box-shadow: 0 .8em #777; }
+.btn_humberger:after  { -ms-transform: translateY(.8em); -webkit-transform: translateY(.8em); transform: translateY(.8em); }
+
+.btn_humberger.open:before { background: #777; -ms-transform: rotate(45deg); -webkit-transform: rotate(45deg); transform: rotate(45deg); box-shadow: none; }
+.btn_humberger.open:after  { background: #777; -ms-transform: rotate(-45deg); -webkit-transform: rotate(-45deg); transform: rotate(-45deg); }
+@media screen and (max-width: 750px) {
+	.btn_gnavi {  top: 0; background: #FFF; position: fixed; top: .5rem; right: 5%; margin: auto; }
+	.gNavi { width: 100%; position: fixed; top: 0; left: 0; right: 0; padding: 3rem 5% 1rem; }
+	header .logo { width: 70%; height: 0; padding-bottom: 12.5%; margin: .5rem auto; }
+	.gNavi .mainmenu > li a { padding: 1rem 0; }
+}
+
+/*-- フッター --*/
+footer { width: 100%;  position: absolute; padding: 0; bottom: 0; left: 0; right: 0; margin: auto; }
+footer .copyright { color: #878787; font-size: .7rem; margin-bottom: 0;  text-align: center; padding-right: 50px; line-height: 130%; padding: 3rem 0 150px;}
+footer .footbar { color: #FFF; background: #000; height: 5rem ; position: fixed; left: 0; right: 0; bottom: 0; margin: auto; z-index: 1000;}
+footer .footbar > .contents_wrap { position: relative; }
+.footbtn-skype { width: 110px; height: 5rem; display: inline-block; background: url(../img/icon-skype.png) no-repeat center center; text-indent: 100%; overflow: hidden; white-space: nowrap;vertical-align: top; border-left: 1px solid #444; border-right: 1px solid #444; }
+.footbtn-tel { width: 110px; height: 5rem; font-size: .8rem; padding: 1.2rem 0 0; text-align: center; display: inline-block;vertical-align: top;  border-right: 1px solid #444;}
+.footbtn-tel:before { content:'';  width: 100%; height: 1.3rem; display: block; background: url(../img/icon-tel-w.png) no-repeat center center; background-size: auto 100%; margin: 0 auto .2rem; }
+
+.footbtn-contact { font-size: 1.2rem; width: 235px; height: 5em; text-align: center; background: #DA3420; border-radius: 5px 5px 0 0; display: block; position: absolute; bottom: 0; right: 0; margin: auto; padding-top: 1em;  }
+.footbtn-contact:before{ content:''; width: 100%; height: 1rem; background: url(../img/icon-contact.png) no-repeat center center; background-size: auto 100% ; display: block; margin: 0 auto .5rem; }
+@media screen and (max-width: 750px) {
+	footer { position: relative; }
+	footer .copyright { padding: 3rem 0 2rem;}
+	footer .footbar { height: 4rem; }
+	.footbtn-skype { width: 25%; height: 4rem; background-size: 40% auto; }
+	.footbtn-tel {  font-size: .7rem; width: 25%; height: 4rem; padding-top: .8rem; }
+	.footbtn-tel:before { height: 1rem; margin-bottom: .2rem; }
+	.footbtn-contact { font-size: .8em; width: 45%; height: 4.5rem; position: fixed; bottom: 0; right: 5%; margin: auto; z-index: 99; padding-top: 1.5em; }
+
+}
+
+main { overflow: hidden; }
+
+/*clearfix*/
+.clearfix:after{ content:" "; display: block; height:0; clear: both; visibility: hidden; }

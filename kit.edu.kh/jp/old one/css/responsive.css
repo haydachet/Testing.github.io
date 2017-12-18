@@ -1,0 +1,261 @@
+@media (min-width: 768px) and (max-width: 1024px) {
+  .section-header .section-title {
+    font-size: 22px;
+  }
+  #video-area .contents h1 {
+    font-size: 32px;
+    line-height: 48px;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    padding: 8px 0px;
+    font-size: 13px;
+  }
+  .item-boxes h4 {
+    font-size: 16px;
+    line-height: 30px;
+  }
+  #features .box-item .text h4 {
+    font-size: 12px;
+  }
+  #features .content-left .text {
+    margin-right: 85px;
+  }
+  #features .content-right .text {
+    margin-left: 85px;
+  }
+  .subscribe-box input[type="text"] {
+    padding: 6px 10px;
+  }
+}
+@media (max-width: 640px) {
+  .logo{
+    height: 60px;
+  }
+  .section-header .section-title {
+    font-size: 30px;
+  }
+  .menu-wrap {
+    padding: 10px;
+  }
+  .icon-list a {
+    padding: 5px 0;
+  }
+  .icon-list a::before {
+    top: 5px;
+  }
+  .bg-faded {
+    background: #fff!important;
+  }
+  #video-area .contents h1 {
+    font-size: 30px;
+    line-height: 48px;
+  }
+  #features .content-right span {
+    float: none;
+  }
+  #features .content-left span {
+    float: none;
+  }
+  #features .box-item .text h4 {
+    font-size: 14px;
+  }
+  .table-left {
+    margin: 0px 0px;
+  }
+  .counters .facts-item {
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .bg-faded {
+    background: #fff!important;
+  }
+  .section-header .section-title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  #video-area .contents {
+    padding: 80px 0 60px;
+  }
+  #video-area .contents h1 {
+    font-size: 18px;
+    line-height: 32px;
+  }
+  .video-promo .video-promo-content h2 {
+    font-size: 18px;
+  }
+  .pricing-tables .pricing-table {
+    margin-bottom: 30px;
+  }
+  #blog .blog-item-text h3 {
+    font-size: 18px;
+  }
+  #blog .blog-item-text .meta-tags span {
+    margin-right: 5px;
+  }
+  .counters .facts-item {
+    margin-bottom: 30px;
+  }
+  #contact .section-title {
+    font-size: 22px;
+  }
+  #subscribe .sub_btn {
+    min-width: 120px;
+  }
+  .social-icons ul li a {
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+  }
+}
+@media (max-width: 1024px) {
+  .mybtn1, .mybtn{
+    font-size:30px;
+    width:250px;
+    line-height:50px;
+  }
+}
+@media (max-width: 512px) {
+  .top-right{
+    font-size: 0.6em;
+  }
+}
+
+@media (max-width: 414px) {
+  .item-boxes h4 {
+    font-size: 15px;
+    line-height: 30px;
+    margin: 8px;
+    margin-top: 18px;
+  }
+  #video-area .contents .btn{
+    margin-top: 125px;
+  }
+
+  .btn{
+    font-size: 150%;
+  }
+}
+
+@media (max-width: 375px) {
+  .item-boxes h4 {
+    font-size: 12px;
+    line-height: 23px;
+    margin: 8px;
+    margin-top: 25px;
+  }
+  .top-right{
+    font-size: 0.458em;
+  }
+}
+@media (max-width: 325px) {
+  .mybtn1, .mybtn {
+    font-size: 140%;
+    width: 160px;
+    line-height: 30px;
+  }
+}
+
+
+
+
+
+  @media (max-width: 1920px) {
+  #video-area .contents .thank {
+    font-size: 50px;
+    line-height: 70px;
+      text-shadow: 2px 2px 8px #FF0000;
+  }
+  #video-area .contents .btnthank {
+    margin-top: 40px;
+  }
+    #video-area .contents .thank + p{
+      font-size: 21px;
+    }
+
+}
+
+@media (max-width: 1024px) {
+  #video-area .contents .thank {
+    font-size: 50px;
+    line-height: 70px;
+  }
+  #video-area .contents .btnthank {
+    margin-top: 40px;
+  }
+    #video-area .contents .thank + p{
+      font-size: 21px;
+    }
+
+  .youtubeIcon{
+    width:15%;
+  }
+
+}
+
+
+@media (max-width: 500px) {
+  #video-area .contents .thank {
+    font-size: 40px;
+    line-height: 60px;
+  }
+
+  #video-area .contents .btnthank {
+    margin-top: 15px;
+  }
+    #video-area .contents .thank + p{
+      font-size: 19px;
+    }
+  .youtubeIcon{
+    width:18%;
+  }
+
+}
+
+@media (max-width: 414px) {
+  #video-area .contents .thank {
+    font-size: 40px;
+    line-height: 50px;
+    margin-top: 0px;
+  }
+
+  #video-area .contents .btnthank {
+    margin-top: 50px;
+  }
+  #video-area .contents .thank + p{
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 375px) {
+  #video-area .contents .thank {
+    font-size: 29px;
+    line-height: 45px;
+    margin-top: 5px;
+  }
+  #video-area .contents .btnthank {
+    margin-top: 50px;
+  }
+    #video-area .contents .thank + p{
+      font-size: 17px;
+    }
+  .youtubeIcon{
+    width:20%;
+  }
+
+}
+
+@media (max-width: 300px) {
+  #video-area .contents .thank {
+    font-size: 25px;
+    line-height: 42px;
+    margin-top: 0px;
+  }
+  #video-area .contents .btnthank {
+    margin-top: 50px;
+  }
+    #video-area .contents .thank + p{
+      font-size: 17px;
+    }
+
+}

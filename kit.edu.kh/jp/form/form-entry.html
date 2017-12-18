@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+
+<!-- Meta -->
+<meta name="format-detection" content="telephome=no">
+<meta name="robots" content="noindex,nofollow"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-language" content="ja">
+<meta name="title" content="キリロム工科大学" />
+<meta itemprop="name" content="キリロム工科大学" />
+
+<meta property="fb:app_id" content="136307306985721">
+<meta property="og:title" content="キリロム工科大学" />
+<meta name="description" content="
+最先端技術を理解するグローバルリーダーを育てる大学、キリロム工科大学（KIT）。2018年度KIT入学者、エンジニアを採用できる企業奨学金スポンサーの応募をお待ちしています。" />
+<meta itemprop="description" content="
+最先端技術を理解するグローバルリーダーを育てる大学、キリロム工科大学（KIT）。2018年度KIT入学者、エンジニアを採用できる企業奨学金スポンサーの応募をお待ちしています。" />
+<meta id="meta-tag-description" property="og:description" content="
+最先端技術を理解するグローバルリーダーを育てる大学、キリロム工科大学（KIT）。2018年度KIT入学者、エンジニアを採用できる企業奨学金スポンサーの応募をお待ちしています。" />
+
+<meta property="og:site_name" content="キリロム工科大学" />
+<meta property="og:type" content="university">
+<meta property="og:url" content="https://www.kirirom.info/" />
+<meta property="og:image" content="https://www.kirirom.info/ogp.jpg" /> 
+
+<title>キリロム工科大学</title>
+
+<!-- Viewport -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<!-- CSS -->
+<link href="https://fonts.googleapis.com/css?family=Volkhov:400i" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="../css/reset.css" media="print,screen" />
+<link rel="stylesheet" type="text/css" href="../form/formstyle.css" media="print,screen" />
+<link rel="stylesheet" type="text/css" href="../css/construction.css" media="print,screen" />
+<link rel="stylesheet" type="text/css" href="../css/flickity.css" media="print,screen" />
+<link rel="stylesheet" type="text/css" href="../css/style.css" media="print,screen" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+<body class="form-inner">
+      <article class="contact anchor">
+         <!-- entry form -->
+         <div>
+          <h2 class="title-line white">キリロム工科大学 説明会･入試情報</h2>
+          <ul class="list-ppt column-max2">
+            <li>
+              <div class="t-left">
+               2018年度キリロム工科大学募集要項です。
+               <br>スライドをご確認ください。
+               <br>
+               <br>説明会や無料の入学試験申し込みをメールにてご連絡いたします。以下よりご登録ください。
+              </div>
+            </li><!--
+         --><li>
+              <div class="framewrap">
+               <iframe src="//www.slideshare.net/slideshow/embed_code/key/q30hIYWUAmNPRE" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; max-width: 100%;" allowfullscreen> </iframe>
+               <div> <strong> <a href="//www.slideshare.net/vkirirom/2018kit" title="2018年度キリロム工科大学募集要項" target="_blank">2018年度キリロム工科大学募集要項</a> </strong> from <strong><a href="https://www.slideshare.net/vkirirom" target="_blank">A2A Town(Cambodia)</a></strong></div>
+              </div>
+            </li>
+          </ul>
+         </div>
+
+         <div class="contents_wrap">
+           <h2 class="title-line">登録フォーム</h2>
+            <form id="contactForm" target="_top"  method="POST" action="php/form-process.php">
+            <dl class="mailform">
+              <dt>氏名</dt>
+              <dd><input type="text" name="name" id="name"  required="required" /></dd>
+              <dt>メールアドレス</dt>
+              <dd><input type="email" data-type="email" id="email" name="email"  required="required" /></dd>
+              <dt>電話番号</dt>
+              <dd><input type="text" name="tell" id="tell" required="required" /></dd>
+              <dt>現在学年/既卒</dt>
+              <dd><input type="text" id="grade" name="grade" /></dd>
+              <dt>備考</dt>
+              <dd><textarea name="inquiry" rows="4" id="inquiry"  cols="60"></textarea></dd>
+            </dl>
+            <div class="mfp_buttons">
+              <button type="submit" id="submit" class="btn-red arrow">送 信</button>
+            </div>
+          </form>
+          <!--<script type="text/javascript" id="mfpjs" src="./mailformpro/mailformpro.cgi?type=entry" charset="UTF-8" ></script>-->
+         </div>
+        </article>
+
+      <script  type="text/javascript">
+          $('#contactForm').on('submit',function (e) {
+              e.preventDefault();
+              var name = $("#name").val();
+              var email = $("#email").val();
+              var tell = $("#tell").val();
+              var grade = $("#grade").val();
+              var inquiry = $("#inquiry").val();
+
+              $.ajax({
+                  url: 'https://script.google.com/macros/s/AKfycbwygaAjNHZfT47QT05HX9ZMfTOkpOnS1No5MVxsbxgDCdxwE7eK/exec',
+                  method: "GET",
+                  dataType: "json",
+                  data: "name=" + name + "&email=" + email +"&tell="+ tell + "&grade=" + grade +"&inquiry="+inquiry ,
+                  success: function (text) {
+                      alert("Thank you for your registration!!!");
+                      window.location.replace("http://kit.edu.kh/jp");
+                  }
+              })
+
+          });
+      </script>
+
+
+</body>
+</html>

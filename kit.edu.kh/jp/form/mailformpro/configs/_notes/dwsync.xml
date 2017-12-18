@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="CSVExport.cgi" server="irohari.sakura.ne.jp/www/css-addict/test/" local="131531899234698399" remote="131527129200000000" Dst="0" />
+<file name="CSVExportTemplate.csv.cgi" server="irohari.sakura.ne.jp/www/css-addict/test/" local="131531899236276492" remote="131527129200000000" Dst="0" />
+<file name="CustomSubject.cgi" server="irohari.sakura.ne.jp/www/css-addict/test/" local="131531899236681182" remote="131527129200000000" Dst="0" />
+<file name="GmailSMTP.cgi" server="irohari.sakura.ne.jp/www/css-addict/test/" local="131531899238102372" remote="131527129200000000" Dst="0" />
+<file name="HTMLMail.cgi" server="irohari.sakura.ne.jp/www/css-addict/test/" local="131531899238478535" remote="131527129200000000" Dst="0" />
+<file name="HTMLMailAdmin.cgi" server="irohari.sakura.ne.jp/www/css-addict/test/" local="131531899239919753" remote="131527129200000000" Dst="0" />
+<file name="HTMLMailAdminTemplate.html.cgi" server="irohari.sakura.ne.jp/www/css-addict/test/" local="131531899240326671" remote="131527129200000000" Dst="0" />
+<file name="HTMLMailTemplate.html.cgi" server="irohari.sakura.ne.jp/www/css-addict/test/" local="131531899241726123" remote="131527129200000000" Dst="0" />
+<file name="IPLogs.cgi" server="irohari.sakura.ne.jp/www/css-addict/test/" local="131531899242120386" remote="131527129200000000" Dst="0" />
+<file name="Items.tsv" server="irohari.sakura.ne.jp/www/css-addict/test/" local="131531899244225514" remote="131527129200000000" Dst="0" />
+<file name="Items.xls" server="irohari.sakura.ne.jp/www/css-addict/test/" local="131531899245929916" remote="131527129200000000" Dst="0" />
+<file name="MultiConfig.cgi" server="irohari.sakura.ne.jp/www/css-addict/test/" local="131531899246363425" remote="131527129200000000" Dst="0" />
+<file name="PayPal.cgi" server="irohari.sakura.ne.jp/www/css-addict/test/" local="131531899246383387" remote="131527129200000000" Dst="0" />
+<file name="ReplyTime.cgi" server="irohari.sakura.ne.jp/www/css-addict/test/" local="131531899248408135" remote="131527129200000000" Dst="0" />
+<file name="SMTP.cgi" server="irohari.sakura.ne.jp/www/css-addict/test/" local="131531899248945266" remote="131527129200000000" Dst="0" />
+<file name="SQLExport.cgi" server="irohari.sakura.ne.jp/www/css-addict/test/" local="131531899248945266" remote="131527129200000000" Dst="0" />
+<file name="SQLExportTemplate.sql.cgi" server="irohari.sakura.ne.jp/www/css-addict/test/" local="131531899250725504" remote="131527129200000000" Dst="0" />
+<file name="cart.cgi" server="irohari.sakura.ne.jp/www/css-addict/test/" local="131531899251262945" remote="131527129200000000" Dst="0" />
+<file name="config.js" server="irohari.sakura.ne.jp/www/css-addict/test/" local="131531899251262945" remote="131527129200000000" Dst="0" />
+<file name="count.cgi" server="irohari.sakura.ne.jp/www/css-addict/test/" local="131531899253261102" remote="131527129200000000" Dst="0" />
+<file name="iCal.cgi" server="irohari.sakura.ne.jp/www/css-addict/test/" local="131531899253261102" remote="131527129200000000" Dst="0" />
+<file name="lang.en.cgi" server="irohari.sakura.ne.jp/www/css-addict/test/" local="131531899253502372" remote="131527129200000000" Dst="0" />
+<file name="lang.en.js" server="irohari.sakura.ne.jp/www/css-addict/test/" local="131531899255826891" remote="131527129200000000" Dst="0" />
+<file name="lang.ja.cgi" server="irohari.sakura.ne.jp/www/css-addict/test/" local="131531899255826891" remote="131527129200000000" Dst="0" />
+<file name="lang.ja.js" server="irohari.sakura.ne.jp/www/css-addict/test/" local="131531899256066899" remote="131527129200000000" Dst="0" />
+<file name="mailauth.cgi" server="irohari.sakura.ne.jp/www/css-addict/test/" local="131531899257940590" remote="131527129200000000" Dst="0" />
+<file name="logger.cgi" server="irohari.sakura.ne.jp/www/css-addict/test/" local="131531899258405337" remote="131527129200000000" Dst="0" />
+<file name="memory.cgi" server="irohari.sakura.ne.jp/www/css-addict/test/" local="131531899258405337" remote="131527129200000000" Dst="0" />
+<file name="questionnaire.cgi" server="irohari.sakura.ne.jp/www/css-addict/test/" local="131531899260241382" remote="131527129200000000" Dst="0" />
+<file name="regist.cgi" server="irohari.sakura.ne.jp/www/css-addict/test/" local="131531899260695212" remote="131527129200000000" Dst="0" />
+<file name="reqonce.cgi" server="irohari.sakura.ne.jp/www/css-addict/test/" local="131531899260705262" remote="131527129200000000" Dst="0" />
+<file name="reserve.cgi" server="irohari.sakura.ne.jp/www/css-addict/test/" local="131531899262596174" remote="131527129200000000" Dst="0" />
+<file name="thanks.cgi" server="irohari.sakura.ne.jp/www/css-addict/test/" local="131531899263047679" remote="131527129200000000" Dst="0" />
+<file name="toName.cgi" server="irohari.sakura.ne.jp/www/css-addict/test/" local="131531899263057720" remote="131527129200000000" Dst="0" />
+<file name="vCard.cgi" server="irohari.sakura.ne.jp/www/css-addict/test/" local="131531899265274677" remote="131527129200000000" Dst="0" />
+<file name="vCardTemplate.vcf.cgi" server="irohari.sakura.ne.jp/www/css-addict/test/" local="131531899265504918" remote="131527129200000000" Dst="0" />
+</dwsync>

@@ -1,0 +1,259 @@
+.two-column{
+	width: 100%;
+	margin: 50px 0px 0px 0px;
+	padding:0px;
+}
+b{
+font-weight: bold;
+}
+i{
+	font-style: italic;
+}
+.left-nav{
+	width: 26%;
+	position: relative;
+	float: left;
+	margin: 0px;
+	padding: 0px;
+}
+.promo-header{
+	width:100%;
+	text-align: center;
+}
+.promo-header > span{
+	padding: 15px 0px;
+	font-size: 16px;
+}
+.promo-list{
+	width: 100%;
+	position: relative;
+	margin-top: 15px;
+	paddin: 0px;
+}
+.promo-list .promo-ul{
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+.promo-ul li{
+	min-height: 44px;
+	width: 100%;
+	border-bottom: 1px solid #ccc;
+	background: #f1ebdf;
+}
+.promo-ul li:hover{
+	background: #ede6d6;
+}
+.promo-ul li a{
+	display: block;
+	padding: 15px 10px 15px 10px;
+	color : #454545;
+	font-size: 14px;
+}
+.promo-ul li a i{
+	margin-right: 4px;
+}
+.promo-img{
+	margin: 15px 0px 15px 0px;
+}
+.promo-title{
+	margin-left: 30px;
+	color: #353535;
+	font-style: oblique;
+	font-weight: 500;
+	font-size: 15px;
+}
+.tab-content .promo-head{
+	font-size: 17px;
+	font-style: italic;
+	font-weight: 500;
+}
+.right-content{
+	width: 70%;
+	position: relative;
+	float: left;
+	margin: 2px 0px 0px 0px;
+	padding: 0px 2% 10px 2%;
+	box-shadow: 0px 0px 6px 2px #d3d3d3;
+	-webkit-box-shadow: 0px 0px 6px 2px #d3d3d3;
+	-moz-box-shadow: 0px 0px 6px 2px #d3d3d3;
+	-o-box-shadow: 0px 0px 6px 2px #d3d3d3;
+	-ms-box-shadow: 0px 0px 6px 2px #d3d3d3;
+}
+.div-clear-top{
+	height: 10px;
+	width: 100%;
+	position: absolute;
+	top: -8px;
+	left: 0px;
+	padding: 0px;
+	margin: 0px;
+	clear: both;
+	background: #F1EDE4;
+	z-index: 0;
+}
+.div-clear-bottom{
+	height: 10px;
+	width: 100%;
+	position: absolute;
+	bottom: -8px;
+	left: 0px;
+	padding: 0px;
+	margin: 0px;
+	clear: both;
+	background: #F1EDE4;
+	z-index: 0;
+}
+.tab-container{
+	position: relative;
+	padding: 0px 10px 15px 10px;
+
+}
+.tab-content{
+	overflow: visible;
+}
+.tab-content ul{
+	list-style-type: square !important;
+	padding: 10px 0px 10px 20px;
+	margin-left: 20px;
+}
+.tab-content ul li{
+	color: #333;
+	line-height: 25px;
+	display: list-item;
+	font-size: 14px;
+}
+.promo-more-img ul{
+	list-style-type: none !important;
+	padding: 0px;
+	margin: 0px;
+	position: relative;
+}
+.promo-more-img ul li{
+	display: list-item;
+	float: left;
+	margin-right: 1%;
+	width: 19.2%;
+	min-height: 40px;
+}
+.promo-more-img ul li:last-child{
+	margin-right: 0px !important;
+}
+
+ul.tab li.current{
+	background: #ededed;
+	color: #222;
+}
+.tab-content{
+	display: inherit;
+	padding-bottom: 20px;
+}
+.tab-content.current{
+	display: none;
+}
+a.special-book-btn{
+	padding: 10px 20px;
+	background: transparent;
+	border: 3px solid #BD7F1C;
+	color: #BD7F1C;
+	font-size: 17px;
+	display: inline-block;
+	font-weight: 600;
+	transition: background ease-in 0.3s;
+	text-align: center;
+}
+a.special-book-btn:hover{
+	background: #BD7f1C;
+	color: #fff;
+}
+.tab-content img.img-scale:hover{
+	transition: all ease-out 0.7s;
+	-webkit-box-shadow: 3px 4px 2px rgba(0,0,0,0.2);
+	-moz-box-shadow: 3px 4px 2px rgba(0,0,0,0.2);
+	box-shadow: 3px 4px 2px rgba(0,0,0,0.2);
+	transform: scale(1.4,1.4);
+}
+.special-btn-div{
+	margin-top: 20px;
+	text-align: center;
+}
+#overlayicon{
+	padding: 0px;
+	margin: auto 0px;
+	vertical-align: middle;
+}
+#overlayicon i{
+	font-size: 24px;
+	font-size: 30px;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+.togglelist{
+    display: none;
+    position: relative;
+    text-align: center;
+    padding: 4px 0px;
+    width: 50%;
+    background: #ede6d6;
+    margin: 0 auto;
+    box-shadow: 1px 2px 1px rgba(0,0,0,0.1);
+}
+.top-fade{
+	position: relative;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 15px;
+    clear: both;
+    z-index: 99;
+}
+@media only screen and (max-width: 480px) {
+	.two-column{
+		margin-top: 20px;
+	}
+	.tab-container{
+		width: 98%;
+    	margin: 0px auto;
+    	padding: 0px 0px 15px 0px;
+	}
+	.togglelist{
+		display: block;
+	}
+	.two-column .left-nav{
+		position: absolute;
+		width: 90%;
+		margin: 0 auto 10px;
+		display: none;
+		z-index: 1000;
+		background: #c4c4c4;
+		padding-top: 15px;
+	}
+	.two-column .right-content {
+    	width: 96%;
+	}
+	.promo-title {
+    	margin-left: 0px;
+	}
+	.special-btn-div{
+		margin-top: 10px;
+	}
+}
+@media only screen and (max-width: 320px) {
+	
+	.tab-container {
+   		width: 98%;
+    	margin: 0px auto;
+    	padding: 0px 0px 15px 0px;
+	}
+	.two-column .right-content {
+    	width: 96%;
+	}
+	.promo-more-img ul li:last-child{
+		display: none;
+		
+	}
+	.promo-more-img ul li{
+		width: 48%;
+		margin-right: 2%;
+	}
+
+}
